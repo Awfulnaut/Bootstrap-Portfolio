@@ -1,60 +1,98 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="utf-8" />
-        <title>Cadin's Portfolio</title>
-        <link rel="icon" type="image/png" href="assets/images/favicon.png">
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    </head>
-    <body>
-        <div class="wrapper">
-            <header>
-                <div class="nav-bar">
-                    <div class="name">
-                        <h1>Cadin McQueen</h1>
-                    </div>
-                    <nav>
-                        <ul class="nav-links">
-                            <li><a href="index.html">About</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <section class="main">
-                <div class="main-content">
-                    <h2>Portfolio</h2>
-                    <hr>
-                    <div class="clearfix">
-                        <div class="card">
-                            <img src="assets/images/placeholder-1.jpeg" alt="placeholder image">
-                            <p class="card__title">Hangman</p>
-                        </div>
-                        <div class="card">
-                            <img src="assets/images/placeholder-2.jpeg" alt="placeholder image">
-                            <p class="card__title">RPG Game</p>
-                        </div>
-                        <div class="card">
-                            <img src="assets/images/placeholder-3.jpeg" alt="placeholder image">
-                            <p class="card__title">Trivia Game</p>
-                        </div>
-                        <div class="card">
-                            <img src="assets/images/placeholder-4.jpeg" alt="placeholder image">
-                            <p class="card__title">Rutgers Info Widget</p>
-                        </div>
-                        <div class="card">
-                            <img src="assets/images/placeholder-5.jpeg" alt="placeholder image">
-                            <p class="card__title">Rock Paper Scissors</p>
-                        </div>
+
+<head>
+    <meta charset="utf-8" />
+    <title>About Cadin</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <h1 class="navbar-brand" href="#">Cadin McQueen</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="index.html">About</a>
+                        <a class="nav-item nav-link" href="#">Portfolio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <a class="nav-item nav-link" href="contact.html">Contact</a>
                     </div>
                 </div>
-            </section>
-            <div class="push"></div>
-        </div>
-        <footer class="footer">
-            <p>Copyright &copy;</p>
-        </footer>
-    </body>
+            </div>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="main-content p-4">
+                        <h2>Portfolio</h2>
+                        <hr>
+                        <div class="d-flex flex-wrap">
+                            <div class="d-flex portfolio-card">
+                                <div class="thumbnail text-center">
+                                    <img src="assets/images/placeholder-1.jpeg" alt="placeholder image" class="img-responsive">
+                                    <div class="caption">
+                                        <p>Hangman</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex portfolio-card">
+                                <div class="thumbnail text-center">
+                                    <img src="assets/images/placeholder-2.jpeg" alt="placeholder image" class="img-responsive">
+                                    <div class="caption">
+                                        <p>RPG Game</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex portfolio-card">
+                                <div class="thumbnail text-center">
+                                    <img src="assets/images/placeholder-3.jpeg" alt="placeholder image" class="img-responsive">
+                                    <div class="caption">
+                                        <p>Trivia Game</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex portfolio-card">
+                                <div class="thumbnail text-center">
+                                    <img src="assets/images/placeholder-4.jpeg" alt="placeholder image" class="img-responsive">
+                                    <div class="caption">
+                                        <p>Rutgers Info Widget</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex portfolio-card">
+                                <div class="thumbnail text-center">
+                                    <img src="assets/images/placeholder-5.jpeg" alt="placeholder image" class="img-responsive">
+                                    <div class="caption">
+                                        <p>Rock Paper Scissors</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">Copyright &copy;</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
